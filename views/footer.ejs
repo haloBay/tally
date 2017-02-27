@@ -1,0 +1,24 @@
+<ul class="index-tab">
+    <li>记账</li>
+    <li>报表</li>
+    <li>资金</li>
+    <li>更多</li>
+</ul>
+
+<script type="text/javascript">
+    // 点击按钮弹出下拉框
+    $('.ui.dropdown').dropdown();
+    // 鼠标悬浮在头像上，弹出气泡提示框
+    $('.post-content .avatar').popup({
+        inline: true,
+        position: 'bottom right',
+        lastResort: 'bottom right'
+    });
+
+    $('.index-tab li').click(function () {
+        $(this).addClass('select').siblings().removeClass('select');
+    });
+
+</script>
+</body>
+</html>
